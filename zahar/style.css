@@ -1,0 +1,75 @@
+.container{
+    position: relative;
+    display: inline-block;
+}
+.slide{
+    position: relative;
+    display: inline-block;
+    
+}
+.block{
+    background-color: brown;
+    width: 200px;
+    height: 100px;
+}
+.number{
+    position: absolute;
+    font-size: 24px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.arrow{
+    cursor:pointer ;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 30px;
+    height: 40px;
+}
+.arrow::before{
+    position: absolute;
+    top: calc(50% - 5px) ;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(44deg);
+ content: '';  
+ display: block;
+ width: 20px;
+ height: 5px;
+ background-color: #fff; 
+}
+.arrow::after{
+    position: absolute;
+    top: calc(50% + 5px) ;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-44deg);
+    content: '';  
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: #fff; 
+   }
+   .left{
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+  .right{
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+   
+   .slider{
+       overflow: hidden;
+       width: 200px;
+       height: 100px;
+       position:relative;
+   }
