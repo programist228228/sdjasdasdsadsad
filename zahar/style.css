@@ -1,9 +1,26 @@
+body{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
+
 .container{
     position: relative;
     display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .slide{
-    position: relative;
+ display: none;
+}
+
+.slide{
+    position: absolute;
+    left: -1000px;
     display: inline-block;
     
 }
@@ -72,4 +89,13 @@
        width: 200px;
        height: 100px;
        position:relative;
+   }
+
+   .dots{
+       margin-top: 30px;
+       padding: 10px;
+   }
+
+   .active{
+       left: 0;
    }
