@@ -28,3 +28,20 @@ rightArrow.addEventListener('click', () => {
     let currentIndex = index === slides.length - 1 ? 0 : index + 1;
     showSlide(currentIndex);
     })
+
+
+
+    dotsArea.addEventListener('click', (e) => {
+        for (let i = 0; i < dots.length; i++) {
+            if (dots[i] === e.target) {
+                showSlide(i);
+                break;
+            }
+        }
+    })
+
+    setInterval(() => {
+
+   let currentIndex = index === slides.length - 1 ? 0 : index + 1;
+   showSlide(currentIndex);    
+   }, 15000);

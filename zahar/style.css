@@ -20,15 +20,13 @@ body{
 
 .slide{
     position: absolute;
-    left: -1000px;
+    left: -10000px;
     display: inline-block;
+    transition: 1s;
     
 }
-.block{
-    background-color: brown;
-    width: 200px;
-    height: 100px;
-}
+
+
 .number{
     position: absolute;
     font-size: 24px;
@@ -86,16 +84,21 @@ body{
    
    .slider{
        overflow: hidden;
-       width: 200px;
-       height: 100px;
+       width: 1280px;
+       height: 720px;
        position:relative;
    }
 
    .dots{
        margin-top: 30px;
-       padding: 10px;
+       padding: -3px;
    }
 
    .active{
        left: 0;
+   }
+
+
+   img {
+       width: 0 auto;
    }
